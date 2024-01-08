@@ -2,11 +2,10 @@
 layout: about
 title: about
 permalink: /
-subtitle: Deep Learning Researcher/Engineer
 
 profile:
   align: right
-  image: yy.jpg
+  image: vivekiyer.jpg
   address: >
 
 news: true  # includes a list of news items
@@ -14,7 +13,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I work as Sr. Staff Deep Learning Engineer at [Qualcomm AI Research](https://www.qualcomm.com/research/artificial-intelligence/ai-research?cmpid=fofyus221808&gclid=Cj0KCQiA0p2QBhDvARIsAACSOOM3Dpz826NbHIO_FaBcb4FDeoXz0nVAd4w5zkCrpDe2F_V2syhq07waAs3VEALw_wcB) in San Diego. My research interests include deep generative models, neural data compression (image/video/speech compression), and machine learning for combinatorial optimization (e.g., graph-level compiler optimization). I am passionate about designing deep learning solutions to challenging problems and deploying them to edge devices. 
+I am a PhD student in the [EdinburghNLP department](https://edinburghnlp.inf.ed.ac.uk/) at the University of Edinburgh. Specifically, I'm a part of the [Machine Translation (StatMT) research group](https://www.wiki.ed.ac.uk/display/statmt/statmt+Home), supervised by [Dr. Alexandra Birch](https://sites.google.com/view/alexandra-birch/) and [Dr. Jeff Pan](http://knowledge-representation.org/j.z.pan/). 
 
-I received my Ph.D. from the Ohio State University in 2015 on wireless networking. Before joining AI Research, I worked on wireless physical layer design (reference signal, channel estimation, tracking loop), channel coding design, and standardization for 5G NR ([patent]({{ site.baseurl }}{% link _pages/patent.md %})). 
+Broadly, I am interested in **Multilingual**, **Multicultural** and **Multimodal** Machine Translation and Generation, motivated by the vision of extending AI to the long tail of languages and cultures across the globe. Recently, I've expored self-supervised pretraining in MT & speech, speech-text modality adaptation, ambiguity resolution, and code-switching in MT scenarios. Additionally, I am passionate about utilizing external structured knowledge in NLP tasks for effective grounding, reliability, and customizability.
 
+For more details, check out my top publications below or my [career summary](http://localhost:4000/experience/). Don't hesitate to [reach out](mailto:vivek.iyer@ed.ac.uk) if you have questions or would like to collaborate!

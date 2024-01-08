@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .review-container {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .review-badge {
+            background-color: #d3d3d3; /* Light grey color */
+            color: #333; /* Darker text for contrast */
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1em;
+            font-weight: bold;
+            margin: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .review-badge::after {
+            content: 'More Info'; /* Text to show on hover */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 1.1em;
+        }
+
+        .review-badge:hover::after {
+            opacity: 1;
+        }
+
+        .review-badge:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+<div class="review-container">
+    <div class="review-badge">Conference A</div>
+    <div class="review-badge">Conference B</div>
+    <div class="review-badge">Conference C</div>
+    <!-- Add more conferences as needed -->
+</div>
+
+</body>
+</html>

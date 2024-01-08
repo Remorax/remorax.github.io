@@ -3,266 +3,203 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{iyer-etal-2023-code,
+    title = "Code-Switching with Word Senses for Pretraining in Neural Machine Translation",
+    author = "Vivek Iyer  and
+      Edoardo Barba  and
+      Alexandra Birch  and
+      Jeff Pan and
+      Roberto Navigli",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023.",
+    month = dec,
+    year = "2023",
+    selected = {true},
+    abbr = {EMNLP (Findings)},
+    tldr={We propose a novel approach for pretraining multilingual NMT models leveraging word sense-specific information from Knowledge Bases. Our experiments show significant improvements in overall translation quality, and robustness to scale to various challenging data and resource-scarce scenarios.},
+    image={/assets/img/pub_img/WSP.png},
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.859",
+    pdf = "https://aclanthology.org/2023.findings-emnlp.859.pdf",
+    doi = "10.18653/v1/2023.findings-emnlp.859",
+    poster = {WSP_Poster.pdf},
+    slides = {WSP_Presentation.pdf},
+    supp = "wsp_code.zip",
+    pages = "12889--12901",
+    abstract = "Lexical ambiguity is a significant and pervasive challenge in Neural Machine Translation (NMT), with many state-of-the-art (SOTA) NMT systems struggling to handle polysemous words (Campolungo et al., 2022). The same holds for the NMT pretraining paradigm of denoising synthetic {``}code-switched{''} text (Pan et al., 2021; Iyer et al., 2023), where word senses are ignored in the noising stage {--} leading to harmful sense biases in the pretraining data that are subsequently inherited by the resulting models. In this work, we introduce Word Sense Pretraining for Neural Machine Translation (WSP-NMT) - an end-to-end approach for pretraining multilingual NMT models leveraging word sense-specific information from Knowledge Bases. Our experiments show significant improvements in overall translation quality. Then, we show the robustness of our approach to scale to various challenging data and resource-scarce scenarios and, finally, report fine-grained accuracy improvements on the DiBiMT disambiguation benchmark. Our studies yield interesting and novel insights into the merits and challenges of integrating word sense information and structured knowledge in multilingual pretraining for NMT.",
+}
 
-@inproceedings{zhu2022transformerbased,
-  title={Transformer-based Transform Coding},
-  author={Yinhao* Zhu and Yang* Yang and Taco Cohen},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  year={2022},
-  url={https://openreview.net/forum?id=IDwN6xjHnK8},
-  html={https://openreview.net/forum?id=IDwN6xjHnK8},
+@inproceedings{iyer-etal-2023-towards,
+    title = "Towards Effective Disambiguation for Machine Translation with Large Language Models",
+    author = "Iyer, Vivek  and
+      Chen, Pinzhen  and
+      Birch, Alexandra",
+    editor = "Koehn, Philipp  and
+      Haddow, Barry  and
+      Kocmi, Tom  and
+      Monz, Christof",
+    booktitle = "Proceedings of the Eighth Conference on Machine Translation.",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    abbr = "WMT",
+    selected = {true},
+    tldr = {We study the capability of LLMs to scale to translation of ambiguous sentences (rare or infrequent word senses) and show they are comparable to or better than strong conventional NMT systems. We also propose techniques to guide LLMs to disambiguate better during translation.},
+    publisher = "Association for Computational Linguistics",
+    image = {/assets/img/pub_img/llm_ambigmt.png},
+    slides = {WMT23_AmbiguousMT.pdf},
+    url = "https://aclanthology.org/2023.wmt-1.44",
+    pdf = "https://aclanthology.org/2023.wmt-1.44.pdf",
+    doi = "10.18653/v1/2023.wmt-1.44",
+    pages = "482--495",
+    abstract = "Resolving semantic ambiguity has long been recognised as a central challenge in the field of Machine Translation. Recent work on benchmarking translation performance on ambiguous sentences has exposed the limitations of conventional Neural Machine Translation (NMT) systems, which fail to handle many such cases. Large language models (LLMs) have emerged as a promising alternative, demonstrating comparable performance to traditional NMT models while introducing new paradigms for controlling the target outputs. In this paper, we study the capabilities of LLMs to translate {``}ambiguous sentences{''} - i.e. those containing highly polysemous words and/or rare word senses. We also propose two ways to improve their disambiguation capabilities, through a) in-context learning and b) fine-tuning on carefully curated ambiguous datasets. Experiments show that our methods can match or outperform state-of-the-art systems such as DeepL and NLLB in four out of five language directions. Our research provides valuable insights into effectively adapting LLMs to become better disambiguators during Machine Translation. We release our curated disambiguation corpora and resources at https://data.statmt.org/ambiguous-europarl.",
+}
+
+@inproceedings{iyer-etal-2023-exploring,
+    title = "Exploring Enhanced Code-Switched Noising for Pretraining in Neural Machine Translation",
+    author = "Iyer, Vivek  and
+      Oncevay, Arturo  and
+      Birch, Alexandra",
+    editor = "Vlachos, Andreas  and
+      Augenstein, Isabelle",
+    image = {/assets/img/pub_img/CCS.jpeg},
+    poster = {EACL23_Poster.pdf},
+    tldr = {We propose a novel pretraining mechanism for NMT called Contextual Code-Switching (CCS) that generates high quality, synthetic code-switched data for pretraining multilingual NMT models. We show this techique can be used for pretraining small, high-performing NMT models that yield gains of up to 5.5 spBLEU points against strong baselines.},
+    abbr = "EACL (Findings)",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2023.",
+    month = may,
+    selected = {true},
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-eacl.72",
+    pdf = "https://aclanthology.org/2023.findings-eacl.72.pdf",
+    supp = "https://aclanthology.org/attachments/2023.findings-eacl.72.software.zip",
+    doi = "10.18653/v1/2023.findings-eacl.72",
+    pages = "984--998",
+    abstract = "Multilingual pretraining approaches in Neural Machine Translation (NMT) have shown that training models to denoise synthetic code-switched data can yield impressive performance gains {---} owing to better multilingual semantic representations and transfer learning. However, they generated the synthetic code-switched data using non-contextual, one-to-one word translations obtained from lexicons - which can lead to significant noise in a variety of cases, including the poor handling of polysemes and multi-word expressions, violation of linguistic agreement and inability to scale to agglutinative languages. To overcome these limitations, we propose an approach called Contextual Code-Switching (CCS), where contextual, many-to-many word translations are generated using a {`}base{'} NMT model. We conduct experiments on 3 different language families - Romance, Uralic, and Indo-Aryan - and show significant improvements (by up to 5.5 spBLEU points) over the previous lexicon-based SOTA approaches. We also observe that small CCS models can perform comparably or better than massive models like mBART50 and mRASP2, depending on the size of data provided. We empirically analyse several key factors responsible for these - including context, many-to-many substitutions, code-switching language count etc. - and prove that they all contribute to enhanced pretraining of multilingual NMT models.",
+}
+
+@article{kirefu2022university,
+  title={The University of Edinburgh's Submission to the WMT22 Code-Mixing Shared Task (MixMT)},
+  author={Kirefu, Faheem and Iyer, Vivek and Chen, Pinzhen and Burchell, Laurie},
+  journal = "Proceedings of the Seventh Conference on Machine Translation.",
+  tldr = "UEdin's submission to Code-Mixed Hinglish<->English Machine Translation task, wherein we propose several careful data augmentation and curation for the low-resourced Hinglish-English pair and explore advanced pretraining techniques. We ranked 2nd overall in both directions of this pair.",
+  selected = {true},
+  url = "https://arxiv.org/abs/2210.11309",
+  pdf = "https://arxiv.org/pdf/2210.11309.pdf",
+  image = {/assets/img/pub_img/cs_examples.png},
+  poster = {MixMTPoster.pdf},
+  comment = "Ranked 2nd best system overall in both directions.",
+  abbr={WMT},
+  abstract="The University of Edinburgh participated in the WMT22 shared task on code-mixed translation. This consists of two subtasks: i) generating code-mixed Hindi/English (Hinglish) text generation from parallel Hindi and English sentences and ii) machine translation from Hinglish to English. As both subtasks are considered low-resource, we focused our efforts on careful data generation and curation, especially the use of backtranslation from monolingual resources. For subtask 1 we explored the effects of constrained decoding on English and transliterated subwords in order to produce Hinglish. For subtask 2, we investigated different pretraining techniques, namely comparing simple initialisation from existing machine translation models and aligned augmentation. For both subtasks, we found that our baseline systems worked best. Our systems for both subtasks were one of the overall top-performing submissions.",
+  year={2022}
+}
+
+@inproceedings{iyer-etal-2021-veealign,
+    title = "{V}ee{A}lign: Multifaceted Context Representation Using Dual Attention for Ontology Alignment",
+    author = "Iyer, Vivek  and
+      Agarwal, Arvind  and
+      Kumar, Harshit",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing.",
+    tldr = "An upgraded version of our Ontology Alignment system, VeeAlign, where we propose a multi-faceted context representation approach for concepts in an ontology, and discover semantically equivalent concepts with dual attention - achieving SOTA results against leading baselines in 4 domains and 2 languages.",
+    abbr = {EMNLP},
+    month = nov,
+    selected = {true},
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    image = {/assets/img/pub_img/VeeAlign_Example.jpeg},
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.842",
+    pdf = "https://aclanthology.org/2021.emnlp-main.842.pdf",
+    doi = "10.18653/v1/2021.emnlp-main.842",
+    pages = "10780--10792",
+    supp = {VeeAlign_code.zip},
+    abstract = "Ontology Alignment is an important research problem applied to various fields such as data integration, data transfer, data preparation, etc. State-of-the-art (SOTA) Ontology Alignment systems typically use naive domain-dependent approaches with handcrafted rules or domain-specific architectures, making them unscalable and inefficient. In this work, we propose VeeAlign, a Deep Learning based model that uses a novel dual-attention mechanism to compute the contextualized representation of a concept which, in turn, is used to discover alignments. By doing this, not only is our approach able to exploit both syntactic and semantic information encoded in ontologies, it is also, by design, flexible and scalable to different domains with minimal effort. We evaluate our model on four different datasets from different domains and languages, and establish its superiority through these results as well as detailed ablation studies. The code and datasets used are available at \url{https://github.com/Remorax/VeeAlign}.",
+}
+
+@inproceedings{iyer2020veealign,
+  title={VeeAlign: a supervised deep learning approach to ontology alignment.},
+  author={Iyer, Vivek and Agarwal, Arvind and Kumar, Harshit},
+  booktitle={Proceedings of the Ontology Matching Workshop @ International Semantic Web Conference 2020.},
+  tldr="A supervised, deep learning-based approach to ontology alignment - that uses a dual attention mechanism to compute structural representation of ontological concepts. Ranked 1st at the OAEI 2020 Conference track.",
+  abbr="ISWC (Workshop)",
+  month= dec,
+  pages={216--224},
   selected={true},
-  abbr={ICLR},
-  tldr={A swin-transformer based auto-encoder structure is proposed that achieves SOTA in rate-distortion-complexity trade-off of image compression. It also outperforms SSF in video compression. AFAIK SwinT-ChARM is the first neural image codec that outperforms VTM in rate-distortion while with comparable decoding time on GPU.},
-  image={/assets/img/pub_img/transformer_transform.png},
-  abstract={Neural data compression based on nonlinear transform coding has made great progress over the last few years, mainly due to improvements in prior models, quantization methods and nonlinear transforms. A general trend in many recent works pushing the limit of rate-distortion performance is to use ever more expensive prior models that can lead to prohibitively slow decoding. Instead, we focus on more expressive transforms that result in a better rate-distortion-computation trade-off. Specifically, we show that nonlinear transforms built on Swin-transformers can achieve better compression efficiency than transforms built on convolutional neural networks (ConvNets), while requiring fewer parameters and shorter decoding time. Paired with a compute-efficient Channel-wise Auto-Regressive Model prior, our SwinT-ChARM model outperforms VTM-12.1 by 3.68 % in BD-rate on Kodak with comparable decoding speed. In P-frame video compression setting, we are able to outperform the popular ConvNet-based scale-space-flow model by 12.35 % in BD-rate on UVG. We provide model scaling studies to verify the computational efficiency of the proposed solutions and conduct several analyses to reveal the source of coding gain of transformers over ConvNets, including better spatial decorrelation, flexible effective receptive field, and more localized response of latent pixels during progressive decoding.}
-}
-
-@inproceedings{plonq,
-  author={Lu, Yadong* and Zhu, Yinhao* and Yang, Yang* and Said, Amir and Cohen, Taco S},
-  booktitle={IEEE International Conference on Image Processing (ICIP)}, 
-  title={Progressive Neural Image Compression With Nested Quantization And Latent Ordering}, 
-  year={2021},
-  pages={539-543},
-  doi={10.1109/ICIP42928.2021.9506026},
-  selected={true},
-  image={/assets/img/pub_img/quantization_levels_and_packets.png},
-  html={https://ieeexplore.ieee.org/document/9506026},  
-  tldr={A prefix-decodable bitstream (lower bitrate stream is embedded as a prefix of higher bitrate stream) is obtained with nested quantization and per-element sorting by prior stddev, based on the hyperprior model.},
-  abbr={ICIP},
-  abstract={We present PLONQ, a progressive neural image compression scheme which pushes the boundary of variable bitrate compression by allowing quality scalable coding with a single bitstream. In contrast to existing learned variable bitrate solutions which produce separate bitstreams for each quality, it enables easier rate-control and requires less storage. Leveraging the latent scaling based variable bitrate solution, we introduce nested quantization, a method that defines multiple quantization levels with nested quantization grids, and progressively refines all latents from the coarsest to the finest quantization level. To achieve finer progressiveness in between any two quantization levels, latent elements are incrementally refined with an importance ordering defined in the rate-distortion sense. To the best of our knowledge, PLONQ is the first learning-based progressive image coding scheme and it outperforms SPIHT, a well-known wavelet-based progressive image codec.}
-}
-
-
-@inproceedings{prelu_nogdn,
-  title={Transform Network Architectures for Deep Learning Based End-to-End Image/Video Coding in Subsampled Color Spaces},
-  volume={2},
-  ISSN={2644-1322},
-  url={http://dx.doi.org/10.1109/OJSP.2021.3092257},
-  DOI={10.1109/ojsp.2021.3092257},
-  booktitle={IEEE Open Journal of Signal Processing},
-  author={Egilmez, Hilmi and Singh, Ankitesh Kumar and Coban, Muhammed and Karczewicz, Marta and Zhu, Yinhao and Yang, Yang and Said, Amir and Cohen, Taco},
-  year={2021},
-  pages={441–452},
-  selected = {true},
-  abbr={JSP},
-  pdf = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9464274},
-  tldr = {PReLU can replace GDN in the hyperprior model to compress YUV (and RGB!) images without loss of coding gain.},
-  image = {/assets/img/pub_img/YUV.png},
-  abstract = {Most of the existing deep learning based end-to-end image/video coding (DLEC) architectures are designed for non-subsampled RGB color format. However, in order to achieve a superior coding performance, many state-of-the-art block-based compression standards such as High Efficiency Video Coding (HEVC/H.265) and Versatile Video Coding (VVC/H.266) are designed primarily for YUV 4:2:0 format, where U and V components are subsampled by considering the human visual system. This paper investigates various DLEC designs to support YUV 4:2:0 format by comparing their performance against the main profiles of HEVC and VVC standards under a common evaluation framework. Moreover, a new transform network architecture is proposed to improve the efficiency of coding YUV 4:2:0 data. The experimental results on YUV 4:2:0 datasets show that the proposed architecture significantly outperforms naive extensions of existing architectures designed for RGB format and achieves about 10% average BD-rate improvement over the intra-frame coding in HEVC.}
-}
-
-@inproceedings{9054074,
-  author={Yang, Yang and Sautière, Guillaume and Ryu, J. Jon and Cohen, Taco S},
-  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
-  title={Feedback Recurrent Autoencoder}, 
+  image = {/assets/img/pub_img/VeeAlign_arch.png},
+  pdf="https://moex.inria.fr/files/reports/ISWC2020-OM-ws.pdf#page=225",
+  supp = {VeeAlign_code.zip},
   year={2020},
-  pages={3347-3351},
-  doi={10.1109/ICASSP40776.2020.9054074},
-  selected = {true},
-  image={/assets/img/pub_img/feedback-recurrent.png},
-  abbr={ICASSP},
-  tldr={Extend VAE to sequential setting for efficient representation learning of sequential data. In the application of speech compression, when paired with a neural vocoder, the proposed FRAE signifantly outperforms Opus, an open source speech codec.},
-  html={https://ieeexplore.ieee.org/document/9054074},
-  abstract={In this work, we propose a new recurrent autoencoder architecture, termed Feedback Recurrent AutoEncoder (FRAE), for online compression of sequential data with temporal dependency. The recurrent structure of FRAE is designed to efficiently extract the redundancy along the time dimension and allows a compact discrete representation of the data to be learned. We demonstrate its effectiveness in speech spectrogram compression. Specifically, we show that the FRAE, paired with a powerful neural vocoder, can produce high-quality speech waveforms at a low, fixed bitrate. We further show that by adding a learned prior for the latent space and using an entropy coder, we can achieve an even lower variable bitrate.},
+  comment = "Ranked 1st in the Conference track.",
+  abstract = "While deep learning approaches have shown promising results in Natural Language Processing and Computer Vision domains, they have not yet been able to achieve impressive results in Ontology Alignment, and have typically performed worse than rule-based approaches. Some of the major reasons for this are: a) poor modelling of context, b) overfitting of standard DL models, and c) dataset sparsity, caused by class imbalance of positive alignment pairs wrt negative pairs. To mitigate these limitations, we propose a dual-attention based approach that uses a multi-faceted context representation to compute contextualized representations of concepts, which is then used to discover semantically equivalent concepts."
 }
 
-
-@inproceedings{Golinski_2020_ACCV,
-  author = {Golinski, Adam* and Pourreza, Reza* and Yang, Yang* and Sautière, Guillaume and Cohen, Taco S},
-  title = {Feedback Recurrent Autoencoder for Video Compression},
-  booktitle = {Asian Conference on Computer Vision (ACCV)},
-  year = {2020},
-  selected = {true},
-  image = {/assets/img/pub_img/VideoFRAE.png},
-  abbr = {ACCV},
-  tldr = {One of the early works that propose neural network based video codecs. A recurrent layer is introduced in the decoder to capture long-range redundancy of video content, the state of which is fed back to encoder.},
-  abstract = {Recent advances in deep generative modeling have enabled efficient modeling of high dimensional data distributions and opened up a new horizon for solving data compression problems. Specifically, autoencoder based learned image or video compression solutions are emerging as strong competitors to traditional approaches. In this work, We propose a new network architecture, based on common and well studied components, for learned video compression operating in low latency mode. Our method yields competitive MS-SSIM/rate performance on the high-resolution UVG dataset, among both learned video compression approaches and classical video compression methods (H.265 and H.264) in the rate range of interest for streaming applications. Additionally, we provide an analysis of existing approaches through the lens of their underlying probabilistic graphical models.Finally, we point out issues with temporal consistency and color shift observed in empirical evaluation, and suggest directions forward to alleviate those.},
-  html = {https://openaccess.thecvf.com/content/ACCV2020/html/Golinski_Feedback_Recurrent_Autoencoder_for_Video_Compression_ACCV_2020_paper.html}
+@article{sanagavarapu2021deep,
+  title={A Deep Learning Approach for Ontology Enrichment from Unstructured Text},
+  author={Sanagavarapu, Lalit Mohan and Iyer, Vivek and Reddy, Raghu},
+  journal={Cybersecurity & High-Performance Computing Environments: Integrated Innovations, Practices, and Applications},
+  url={https://arxiv.org/abs/2112.08554},
+  pdf={https://arxiv.org/pdf/2112.08554.pdf},
+  image = {/assets/img/pub_img/ontoenricher.png},
+  tldr="An automated, Deep Learning-based approach to ontology enrichment from unstructured text. Bidirectional LSTMs trained on a large DBpedia dataset and Wikipedia corpus, along with the Universal Sentence Encoder to predict sentence-level concepts and relations and enrich an Information Security ontology.",
+  abbr="Taylor & Francis",
+  comment="Book chapter published by CRC Press (Taylor & Francis)",
+  abstract="Information Security in the cyber world is a major cause for concern, with a significant increase in the number of attack surfaces. Existing information on vulnerabilities, attacks, controls, and advisories available on the web provides an opportunity to represent knowledge and perform security analytics to mitigate some of the concerns. Representing security knowledge in the form of ontology facilitates anomaly detection, threat intelligence, reasoning and relevance attribution of attacks, and many more. This necessitates dynamic and automated enrichment of information security ontologies. However, existing ontology enrichment algorithms based on natural language processing and ML models have issues with contextual extraction of concepts in words, phrases, and sentences. This motivates the need for sequential Deep Learning architectures that traverse through dependency paths in text and extract embedded vulnerabilities, threats, controls, products, and other security-related concepts and instances from learned path representations. In the proposed approach, Bidirectional LSTMs trained on a large DBpedia dataset and Wikipedia corpus of 2.8 GB along with Universal Sentence Encoder is deployed to enrich ISO 27001-based information security ontology. The model is trained and tested on a high-performance computing (HPC) environment to handle Wiki text dimensionality. The approach yielded a test accuracy of over 80% when tested with knocked-out concepts from ontology and web page instances to validate the robustness.",
+  year={2021}
 }
 
-
-@inproceedings{Ding_2020_CVPR,
-  author = {Ding, Zheng* and Xu, Yifan* and Xu, Weijian and Parmar, Gaurav and Yang, Yang and Welling, Max and Tu, Zhuowen},
-  title = {Guided Variational Autoencoder for Disentanglement Learning},
-  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2020},
-  selected = {true},
-  image = {/assets/img/pub_img/GuidedVAE.png},
-  abbr={CVPR},
-  tldr={An auxiliary decoder is used to improve the disentanglement of latent from a VAE.},
-  html = {https://openaccess.thecvf.com/content_CVPR_2020/html/Ding_Guided_Variational_Autoencoder_for_Disentanglement_Learning_CVPR_2020_paper.html},
-  abstract = {We propose an algorithm, guided variational autoencoder (Guided-VAE), that is able to learn a controllable generative model by performing latent representation disentanglement learning. The learning objective is achieved by providing signal to the latent encoding/embedding in VAE without changing its main backbone architecture, hence retaining the desirable properties of the VAE. We design an unsupervised and a supervised strategy in Guided-VAE and observe enhanced modeling and controlling capability over the vanilla VAE. In the unsupervised strategy, we guide the VAE learning by introducing a lightweight decoder that learns latent geometric transformation and principal components; in the supervised strategy, we use an adversarial excitation and inhibition mechanism to encourage the disentanglement of the latent variables. Guided-VAE enjoys its transparency and simplicity for the general representation learning task, as well as disentanglement learning. On a number of experiments for representation learning, improved synthesis/sampling, better disentanglement for classification, and reduced classification errors in meta learning have been observed.},
+@inproceedings{iyer2022skm,
+author="Iyer, Vivek
+and Sanagavarapu, Lalit Mohan
+and Raghu Reddy, Y.",
+editor="Krishnan, Ram
+and Rao, H. Raghav
+and Sahay, Sanjay K.
+and Samtani, Sagar
+and Zhao, Ziming",
+title="A Framework for Syntactic and Semantic Quality Evaluation of Ontologies",
+booktitle="Secure Knowledge Management In The Artificial Intelligence Era",
+year="2022",
+month="March",
+url={https://link.springer.com/chapter/10.1007/978-3-030-97532-6_5},
+pdf={https://www.researchgate.net/profile/Vivek-Iyer-4/publication/358771514_A_Framework_for_Syntactic_and_Semantic_Quality_Evaluation_of_Ontologies/links/6409c484f269a77d520637c8/A-Framework-for-Syntactic-and-Semantic-Quality-Evaluation-of-Ontologies.pdf},
+publisher="Springer International Publishing",
+address="Cham",
+image={/assets/img/pub_img/ontoquality.png},
+abbr="Springer",
+pages="73--93",
+abstract="The increasing focus on Web 3.0 is leading to automated creation and enrichment of ontologies and other linked datasets. Alongside automation, quality evaluation of enriched ontologies can impact software reliability and reuse. Current quality evaluation approaches oftentimes seek to evaluate ontologies in either syntactic (degree of following ontology development guidelines) or semantic (degree of semantic validity of enriched concepts/relations) aspects. This paper proposes an ontology quality evaluation framework consisting of: (a) SynEvaluator and (b) SemValidator for evaluating syntactic and semantic aspects of ontologies respectively. SynEvaluator allows dynamic task-specific creation and updation of syntactic rules at run-time without any need for programming. SemValidator uses Twitter-based expertise of validators for semantic evaluation. The efficacy and validity of the framework is shown empirically on multiple ontologies.",
+tldr="A framework for syntactic and semantic quality evaluation of ontologies, consisting of a) SynEvaluator and b) SemValidator. SynEvaluator allows dynamic task-specific creation and updation of syntactic rules at run-time without any need for programming. SemValidator uses Twitter-based expertise of validators for semantic evaluation. The efficacy and validity of the framework is shown empirically on multiple ontologies.",
+isbn="978-3-030-97532-6"
 }
 
-@inproceedings{8682157,
-  author={Yang, Yang and Lalitha, Anusha and Lee, Jinwon and Lott, Chris},
-  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
-  title={Automatic Grammar Augmentation for Robust Voice Command Recognition}, 
-  year={2019},
-  pages={6376-6380},
-  doi={10.1109/ICASSP.2019.8682157},
-  selected = {true},
-  image = {/assets/img/pub_img/GrammarAug.png},
-  abbr={ICASSP},
-  tldr={Improve voice command recognition of a light-weight acoustic model by augmenting the target command to capture variations of inputs.},
-  html={https://ieeexplore.ieee.org/document/8682157},
-  abstract={This paper proposes a novel pipeline for automatic grammar augmentation that provides a significant improvement in the voice command recognition accuracy for systems with small footprint acoustic model (AM). The improvement is achieved by augmenting the user-defined voice command set, also called grammar set, with alternate grammar expressions. For a given grammar set, a set of potential grammar expressions (candidate set) for augmentation is constructed from an AM-specific statistical pronunciation dictionary that captures the consistent patterns and errors in the decoding of AM induced by variations in pronunciation, pitch, tempo, accent, ambiguous spellings, and noise conditions. Using this candidate set, greedy optimization based and cross-entropy-method (CEM) based algorithms are considered to search for an augmented grammar set with improved recognition accuracy utilizing a command-specific dataset. Our experiments show that the proposed pipeline along with algorithms considered in this paper significantly reduce the mis-detection and mis-classification rate without increasing the false-alarm rate. Experiments also demonstrate the consistent superior performance of CEM method over greedy-based algorithms.},
+@inproceedings{iyer-etal-2019-survey,
+    title = "A Survey on Ontology Enrichment from Text",
+    author = "Iyer, Vivek  and
+      Mohan, Lalit  and
+      Bhatia, Mehar  and
+      Reddy, Y. Raghu",
+    editor = "Sharma, Dipti Misra  and
+      Bhattacharya, Pushpak",
+    abbr="ICON",
+    booktitle = "Proceedings of the 16th International Conference on Natural Language Processing",
+    month = dec,
+    year = "2019",
+    tldr = "A survey paper studying the trends in ontology extraction and enrichment from unstructured text, comparing key rule-based and Machine Learning approaches over the last 2 decades.",
+    address = "International Institute of Information Technology, Hyderabad, India",
+    publisher = "NLP Association of India",
+    image = {/assets/img/pub_img/ontology_survey.png},
+    url = "https://aclanthology.org/2019.icon-1.11",
+    pdf = "https://aclanthology.org/2019.icon-1.11.pdf",
+    pages = "95--104",
+    abstract = "Increased internet bandwidth at low cost is leading to the creation of large volumes of unstructured data. This data explosion opens up opportunities for the creation of a variety of data-driven intelligent systems, such as the Semantic Web. Ontologies form one of the most crucial layers of semantic web, and the extraction and enrichment of ontologies given this data explosion becomes an inevitable research problem. In this paper, we survey the literature on semi-automatic and automatic ontology extraction and enrichment and classify them into four broad categories based on the approach. Then, we proceed to narrow down four algorithms from each of these categories, implement and analytically compare them based on parameters like context relevance, efficiency and precision. Lastly, we propose a Long Short Term Memory Networks (LSTM) based deep learning approach to try and overcome the gaps identified in these approaches.",
 }
 
-
-@inproceedings{psc,
-  title={Phase Selective Convolution},
-  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops on Embedded Vision},
-  author={Jamie Menjay Lin and Parham Noorzad and Yang Yang and Nojun Kwak and Fatih Porikli},
-  year={2021},
-  selected = {true},
-  image = {/assets/img/pub_img/PSC.png},
-  abbr={CVPR-W},
-  abstract={This paper introduces Phase Selective Convolution (PSC), an enhanced convolution for more deliberate utilization of activations in convolutional networks. Unlike conventional use of convolutions with activation functions, PSC preserves the full space of activations while supporting desirable model nonlinearity. Similar to several other network operations, e.g., the ReLU operation, at the time of their introduction, PSC may not execute as efficiently on platforms without hardware specialization support. As a first step in addressing the need for optimization, we propose a hardware acceleration scheme to enable the intended efficiency for PSC execution. Moreover, we propose a PSC deployment strategy, with which PSC is applied only to selected layers of the networks, to avoid excessive increase in the total model size. To evaluate the results, we apply PSC as a drop-in replacement for selected convolution layers in several networks without affecting their macro network architectures. In particular, PSC-enhanced ResNets achieve higher accuracies by 1.0-2.0% and 0.7-1.0% on CIFAR-100 and ImageNet, respectively, in Pareto efficiency. PSC-enhanced MobileNets (V2 and V3 Large) and MobileNetV3 (Small) achieve 0.9-1.0% and 1.8% accuracy gains, respectively, on ImageNet at little (0.2-0.7%) total model size increase.},
-  html = {https://openaccess.thecvf.com/content/CVPR2021W/EVW/html/Lin_Phase_Selective_Convolution_CVPRW_2021_paper.html},
-  tldr = {A simple and effective extension of Conv+ReLU that can achieve better pareto efficiency in image classification when compared with ResNet and MobileNets},
-}
-
-
-@inproceedings{tat,
-  title={Deep Generative Video Compression with Temporal Autoregressive Transforms},
-  booktitle={ICML 2020 Workshop on Invertible Neural Networks, Normalizing Flows, andExplicit Likelihood Models},
-  author={Ruihan Yang and Yibo Yang and Joseph Marino and Yang Yang and Stephan Mandt},
-  year={2020},
-  abbr={ICML-W},
-  pdf = {https://joelouismarino.github.io/files/papers/2020/seq_flows_compression/seq_flows_compression.pdf},
-}
-
-
-@article{delay_asymptotics,
-  author={Yang, Yang and Tan, Jian and Shroff, Ness B. and Gamal, Hesham El},
-  journal={IEEE Transactions on Information Theory}, 
-  title={Delay Asymptotics With Retransmissions and Incremental Redundancy Codes Over Erasure Channels}, 
-  year={2014},
-  volume={60},
-  number={3},
-  pages={1932-1944},
-  doi={10.1109/TIT.2014.2300485},
-  abbr={ToIT},
-  html={https://ieeexplore.ieee.org/abstract/document/6717177/similar#similar},
-}
-
-@inproceedings{delay_asymptotics_fixed_rate_coding,
-  author={Tan, Jian and Yang, Yang and Shroff, Ness B. and El Gamal, Hesham},
-  booktitle={IEEE INFOCOM}, 
-  title={Delay asymptotics with retransmissions and fixed rate codes over erasure channels}, 
-  year={2011},
-  pages={1260-1268},
-  doi={10.1109/INFCOM.2011.5934907},
-  abbr={INFOCOM},
-  html={https://ieeexplore.ieee.org/document/5934907},
-}
-
-@inproceedings{10.1145/2248371.2248391,
-  author = {Yang, Yang and Shroff, Ness},
-  title = {Throughput of Rateless Codes over Broadcast Erasure Channels},
-  year = {2012},
-  isbn = {9781450312813},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  url = {https://doi.org/10.1145/2248371.2248391},
-  doi = {10.1145/2248371.2248391},
-  abstract = {In this paper, we characterize the throughput of a broadcast network with n receivers using rateless codes with block size K. We assume that the underlying channel is a Markov modulated erasure channel that is i.i.d. across users, but can be correlated in time. We characterize the system throughput asymptotically in n. Specifically, we explicitly show how the throughput behaves for different values of the coding block size K as a function of n, as n approaches infinity. Under the more restrictive assumption of memoryless channels, we are able to provide a lower bound on the maximum achievable throughput for any finite values of K and n. Using simulations we show the tightness of the bound with respect to system parameters n and K, and find that its performance is significantly better than the previously known lower bound.},
-  booktitle = {Thirteenth ACM International Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc)},
-  pages = {125–134},
-  numpages = {10},
-  keywords = {broadcast erasure channel, achievable rate, random linear network code, throughput, markov modulated channel, rateless erasure code},
-  location = {Hilton Head, South Carolina, USA},
-  series = {MobiHoc '12},
-  abbr={MobiHoc},
-  html = {https://dl.acm.org/doi/10.1145/2248371.2248391},
-}
-
-@inproceedings{6847947,
-  author={Yang, Yang and Chen, Bo and Srinivasan, Kannan and Shroff, Ness B.},
-  booktitle={IEEE INFOCOM}, 
-  title={Characterizing the achievable throughput in wireless networks with two active RF chains}, 
-  year={2014},
-  pages={262-270},
-  doi={10.1109/INFOCOM.2014.6847947},
-  abbr={INFOCOM},
-  html={https://ieeexplore.ieee.org/document/6847947},
-}
-
-@inproceedings{6850302,
-  author={Yang, Yang and Nam, Changwon and Shroff, Ness B.},
-  booktitle={12th International Symposium on Modeling and Optimization in Mobile, Ad Hoc, and Wireless Networks (WiOpt)}, 
-  title={A near-optimal randomized algorithm for uplink resource allocation in OFDMA systems}, 
-  year={2014},
-  pages={218-225},
-  doi={10.1109/WIOPT.2014.6850302},
-  abbr={WiOpt},
-  html={https://ieeexplore.ieee.org/document/6850302},
-}
-
-@article{6991510,
-  author={Wu, Fei and Sun, Yin and Yang, Yang and Srinivasan, Kannan and Shroff, Ness B.},
-  journal={IEEE Journal on Selected Areas in Communications}, 
-  title={Constant-Delay and Constant-Feedback Moving Window Network Coding for Wireless Multicast: Design and Asymptotic Analysis}, 
-  year={2015},
-  volume={33},
-  number={2},
-  pages={127-140},
-  doi={10.1109/JSAC.2014.2384215},
-  abbr={JSAC},
-  html={https://ieeexplore.ieee.org/document/6991510},
-}
-
-@inproceedings{7218602,
-  author={Yang, Yang and Shroff, Ness B.},
-  booktitle={IEEE INFOCOM}, 
-  title={Scheduling in wireless networks with full-duplex cut-through transmission}, 
-  year={2015},
-  pages={2164-2172},
-  doi={10.1109/INFOCOM.2015.7218602},
-  abbr={INFOCOM},
-  html={https://ieeexplore.ieee.org/document/7218602}
-}
-
-@inproceedings{7402446,
-  author={Yang, Yang and Liu, Jiashang and Sinha, Prasun and Shroff, Ness B.},
-  booktitle={54th IEEE Conference on Decision and Control (CDC)}, 
-  title={Dynamic user association and energy control in cellular networks with renewable resources}, 
-  year={2015},
-  pages={1643-1650},
-  doi={10.1109/CDC.2015.7402446},
-  abbr={CDC},
-  html={https://ieeexplore.ieee.org/document/7402446},
-}
-
-@inproceedings{10.1145/2942358.2942362,
-  author = {Wu, Fei and Yang, Yang and Zhang, Ouyang and Srinivasan, Kannan and Shroff, Ness B.},
-  title = {Anonymous-Query Based Rate Control for Wireless Multicast: Approaching Optimality with Constant Feedback},
-  year = {2016},
-  isbn = {9781450341844},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  url = {https://doi.org/10.1145/2942358.2942362},
-  doi = {10.1145/2942358.2942362},
-  abstract = {For a multicast group of n receivers, existing techniques either achieve high throughput at the cost of prohibitively large (e.g., O(n)) feedback overhead, or achieve low feedback overhead but without either optimal or near-optimal throughput guarantees. Simultaneously achieving good throughput guarantees and low feedback overhead has been an open problem and could be the key reason why wireless multicast has not been successfully deployed in practice. In this paper, we develop a novel anonymous-query based rate control, which approaches the optimal throughput with a constant feedback overhead independent of the number of receivers. In addition to our theoretical results, through implementation on a software-defined ratio platform, we show that the anonymous-query based algorithm achieves low-overhead and robustness in practice.},
-  booktitle = {17th ACM International Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc)},
-  pages = {191–200},
-  numpages = {10},
-  keywords = {near-optimal throughput, wireless multicast, low feedback overhead},
-  location = {Paderborn, Germany},
-  series = {MobiHoc '16},
-  abbr={MobiHoc},
-  html={https://dl.acm.org/doi/10.1145/2942358.2942362},
-}
-
-@INPROCEEDINGS{8737655,
-  author={Qian, Zhenzhi and Yang, Yang and Srinivasan, Kannan and Shroff, Ness B.},
-  booktitle={IEEE INFOCOM}, 
-  title={Joint Antenna Allocation and Link Scheduling in FlexRadio Networks}, 
-  year={2019},
-  pages={1657-1665},
-  doi={10.1109/INFOCOM.2019.8737655},
-  html={https://ieeexplore.ieee.org/document/8737655},
-  abbr={INFOCOM},
-}
