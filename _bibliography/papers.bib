@@ -45,7 +45,7 @@
     month = dec,
     year = "2023",
     address = "Singapore",
-    abbr = "WMT",
+    abbr = "WMT (EMNLP)",
     selected = {true},
     tldr = {We study the capability of LLMs to scale to translation of ambiguous sentences (rare or infrequent word senses) and show they are comparable to or better than strong conventional NMT systems. We also propose techniques to guide LLMs to disambiguate better during translation.},
     publisher = "Association for Computational Linguistics",
@@ -94,7 +94,7 @@
   image = {/assets/img/pub_img/cs_examples.png},
   poster = {MixMTPoster.pdf},
   comment = "Ranked 2nd best system overall in both directions.",
-  abbr={WMT},
+  abbr={WMT (EMNLP)},
   abstract="The University of Edinburgh participated in the WMT22 shared task on code-mixed translation. This consists of two subtasks: i) generating code-mixed Hindi/English (Hinglish) text generation from parallel Hindi and English sentences and ii) machine translation from Hinglish to English. As both subtasks are considered low-resource, we focused our efforts on careful data generation and curation, especially the use of backtranslation from monolingual resources. For subtask 1 we explored the effects of constrained decoding on English and transliterated subwords in order to produce Hinglish. For subtask 2, we investigated different pretraining techniques, namely comparing simple initialisation from existing machine translation models and aligned augmentation. For both subtasks, we found that our baseline systems worked best. Our systems for both subtasks were one of the overall top-performing submissions.",
   year={2022}
 }
@@ -110,7 +110,7 @@
       Yih, Scott Wen-tau",
     booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing.",
     tldr = "An upgraded version of our Ontology Alignment system, VeeAlign, where we propose a multi-faceted context representation approach for concepts in an ontology, and discover semantically equivalent concepts with dual attention - achieving SOTA results against leading baselines in 4 domains and 2 languages.",
-    abbr = {EMNLP},
+    abbr = {EMNLP (Main)},
     month = nov,
     selected = {true},
     year = "2021",
@@ -203,3 +203,49 @@ isbn="978-3-030-97532-6"
     abstract = "Increased internet bandwidth at low cost is leading to the creation of large volumes of unstructured data. This data explosion opens up opportunities for the creation of a variety of data-driven intelligent systems, such as the Semantic Web. Ontologies form one of the most crucial layers of semantic web, and the extraction and enrichment of ontologies given this data explosion becomes an inevitable research problem. In this paper, we survey the literature on semi-automatic and automatic ontology extraction and enrichment and classify them into four broad categories based on the approach. Then, we proceed to narrow down four algorithms from each of these categories, implement and analytically compare them based on parameters like context relevance, efficiency and precision. Lastly, we propose a Long Short Term Memory Networks (LSTM) based deep learning approach to try and overcome the gaps identified in these approaches.",
 }
 
+
+@inproceedings{iyer-etal-2024-exploring,
+    title = "Exploring Very Low-Resource Translation with {LLM}s: The {U}niversity of {E}dinburgh{'}s Submission to {A}mericas{NLP} 2024 Translation Task",
+    author = "Iyer, Vivek  and
+      Malik, Bhavitvya  and
+      Zhu, Wenhao  and
+      Stepachev, Pavel  and
+      Chen, Pinzhen  and
+      Haddow, Barry  and
+      Birch, Alexandra",
+    editor = "Mager, Manuel  and
+      Ebrahimi, Abteen  and
+      Rijhwani, Shruti  and
+      Oncevay, Arturo  and
+      Chiruzzo, Luis  and
+      Pugh, Robert  and
+      von der Wense, Katharina",
+    booktitle = "Proceedings of the 4th Workshop on Natural Language Processing for Indigenous Languages of the Americas (AmericasNLP 2024)",
+    month = jun,
+    year = "2024",
+    abbr="AmericasNLP (NAACL)",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    image= {/assets/img/pub_img/americasnlp24_results.png},
+    url = "https://aclanthology.org/2024.americasnlp-1.25",
+    pdf="https://aclanthology.org/2024.americasnlp-1.25.pdf",
+    tldr="We explore the ability of multilingual Large Language Models (LLMs) to model low-resource languages by continued pre-training with LoRA, and conduct instruction fine-tuning using a variety of datasets, demonstrating that this improves LLM performance. Furthermore, we demonstrate the efficacy of checkpoint averaging alongside decoding techniques like beam search and sampling, resulting in further improvements. We participate in all 11 translation directions.",
+    poster="https://drive.google.com/file/d/1NSakfvtCggxo2Iy69Z-vctTGvzVt5ICv/view?usp=sharing",
+    doi = "10.18653/v1/2024.americasnlp-1.25",
+    pages = "209--220",
+    abstract = "This paper describes the University of Edinburgh{'}s submission to the AmericasNLP 2024 shared task on the translation of Spanish into 11 indigenous American languages. We explore the ability of multilingual Large Language Models (LLMs) to model low-resource languages by continued pre-training with LoRA, and conduct instruction fine-tuning using a variety of datasets, demonstrating that this improves LLM performance. Furthermore, we demonstrate the efficacy of checkpoint averaging alongside decoding techniques like beam search and sampling, resulting in further improvements. We participate in all 11 translation directions.",
+}
+
+@inproceedings{boito2024mhubert,
+  title={mHuBERT-147: A Compact Multilingual HuBERT Model},
+  author={Boito, Marcely Zanon and Iyer, Vivek and Lagos, Nikolaos and Besacier, Laurent and Calapodescu, Ioan},
+  booktitle={Proceedings of INTERSPEECH 2024},
+  url={https://arxiv.org/abs/2406.06371},
+  pdf={https://arxiv.org/pdf/2406.06371.pdf},
+  image = {/assets/img/pub_img/mhubert147.png},
+  abbr="Interspeech",
+  month= sep,
+  tldr="mHuBERT-147 is a compact 95M parameter multilingual HuBERT model trained on 90K hours of clean, open-license data. It outperforms larger models trained on substantially more data, ranking second and first on the ML-SUPERB 10min and 1h leaderboards, with SOTA scores for 3 tasks. Across ASR/LID tasks, our model consistently surpasses XLS-R (300M params; 436K hours) and demonstrates strong competitiveness against the much larger MMS (1B params; 491K hours).",
+  abstract="We present mHuBERT-147, the first general-purpose massively multilingual HuBERT speech representation model trained on 90K hours of clean, open-license data. To scale up the multi-iteration HuBERT approach, we use faiss-based clustering, achieving 5.2x faster label assignment than the original method. We also apply a new multilingual batching up-sampling strategy, leveraging both language and dataset diversity. After 3 training iterations, our compact 95M parameter mHuBERT-147 outperforms larger models trained on substantially more data. We rank second and first on the ML-SUPERB 10min and 1h leaderboards, with SOTA scores for 3 tasks. Across ASR/LID tasks, our model consistently surpasses XLS-R (300M params; 436K hours) and demonstrates strong competitiveness against the much larger MMS (1B params; 491K hours). Our findings indicate that mHuBERT-147 is a promising model for multilingual speech tasks, offering an unprecedented balance between high performance and parameter efficiency.",
+  year={2024}
+}

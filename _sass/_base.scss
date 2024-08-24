@@ -122,6 +122,9 @@ blockquote {
     border-top: 1px solid var(--global-divider-color) !important;
   }
 }
+.col-sm-8 {
+  margin-left: 20px;
+}
 .dropdown-item {
   color: var(--global-text-color);
     &:hover {
@@ -407,6 +410,7 @@ footer.sticky-bottom {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
+    padding-left: 1rem;
     margin-top: 2rem;
     margin-bottom: -2rem;
     text-align: right;
@@ -424,8 +428,8 @@ footer.sticky-bottom {
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
+          padding-left: 0.6rem;
+          padding-right: 0.6rem;
           a {
             color: white;
             &:hover {
