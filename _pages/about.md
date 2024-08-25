@@ -5,7 +5,7 @@ permalink: /
 
 profile:
   align: right
-  image: VivekIyer.jpg
+  image: vivekiyer.jpg
   address: >
 
 news: true  # includes a list of news items
