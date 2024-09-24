@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>        
+    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vivek Iyer</title>
+    <meta name="author" content="Vivek  Iyer" />
+    <meta name="description" content="The personal website of Vivek Iyer, PhD student at the University of Edinburgh.
+" />
+    <meta name="keywords" content="vivek-iyer, iyer, vivek" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+    <!-- Styles -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌏</text></svg>">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://remorax.github.io/">
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/">about<span class="sr-only">(current)</span></a>
+              </li>
+              
+              <!-- Blog -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/experience/">experience</a>
+              </li>
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">publications</a>
+              </li>
+            </ul>
+          </div>
+       </div>
+      </nav>
+
+    <!-- Scrolling Progress Bar -->
+    <div class="progress-container fixed-top">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <!-- Reading progress bar -->
+
+    <!-- Javascript for Progress Bar -->
+    <script type="text/javascript">
+      window.onscroll = function() {myFunction()};
+
+      function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+    </script>
+      
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- about.html -->
+      <div class="post">
+        <header class="post-header">
+          <h1 class="post-title">
+           Vivek Iyer
+          </h1>
+          <p class="desc"></p>
+        </header>
+
+        <article>
+          <div class="profile float-right">
+            <div class="teaser">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/vivekiyer-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/vivekiyer-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/vivekiyer-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid z-dept-1 rounded" src="/assets/img/vivekiyer.jpg" alt="vivekiyer.jpg">
+
+  </picture>
+
+</figure>
+</div>
+            <div class="address">
+              
+            </div>
+          </div>
+
+          <div class="clearfix">
+            <p>I am a 2nd year PhD student in NLP at the <a href="https://edinburghnlp.inf.ed.ac.uk/" target="_blank" rel="noopener noreferrer">University of Edinburgh</a> (2022-current). I’m a part of the <a href="https://www.wiki.ed.ac.uk/display/statmt/statmt+Home" target="_blank" rel="noopener noreferrer">Machine Translation (StatMT) research group</a> there, supervised by <a href="https://sites.google.com/view/alexandra-birch/" target="_blank" rel="noopener noreferrer">Dr. Alexandra Birch</a>.</p>
+
+<p>Broadly, I am interested in adapting NLP models for the long tail of <em>under-represented languages and cultures</em> across the globe. Currently, I am working on <strong>multilingual NLP</strong> (including synthetic instruction tuning for multilingual LLMs, low-resource MT and generation) as well as <strong>multicultural NLP</strong> (<em>transcreation</em> for cross-culturally understandable generation).</p>
+
+<!-- In the past, my experience has been quite diverse, and I've published in top *ACL conferences on modelling for low-resource LLM-MT [[1]](https://aclanthology.org/2024.americasnlp-1.25/), resolving ambiguity in MT [[2]](https://aclanthology.org/2023.wmt-1.44/)[[3]](https://aclanthology.org/2023.findings-emnlp.859), synthetic pretraining for multilingual NMT [[4]](https://aclanthology.org/2023.findings-eacl.72) and, in another life, on ontologies too [[5]](https://aclanthology.org/2021.emnlp-main.842). -->
+
+<p>For more details, check out my top publications below or my <a href="http://localhost:4000/experience/" target="_blank" rel="noopener noreferrer">career summary</a>. Don’t hesitate to <a href="mailto:vivek.iyer@ed.ac.uk">reach out</a> if you have questions or would like to collaborate!</p>
+
+          </div>
+
+          <!-- News -->          
+          <div class="news">
+            <h2>news</h2>
+            <div class="table-responsive">
+              <table class="table table-sm table-borderless"> 
+                <tr>
+                  <th scope="row">Sep 20, 2024</th>
+                  <td>
+                    <strong>[WMT 2024]</strong> 2 long papers on <a href="https://arxiv.org/abs/2408.12780" target="_blank" rel="noopener noreferrer">low-resource LLM-MT</a> and <a href="https://arxiv.org/abs/2408.13534" target="_blank" rel="noopener noreferrer">cultural transcreation of menus</a> accepted at WMT (EMNLP) 2024! See you all in Miami <img class="emoji" title=":us:" alt=":us:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1fa-1f1f8.png" height="20" width="20"> <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20">
+ 
+                  </td>
+                </tr> 
+                <tr>
+                  <th scope="row">Jul 11, 2024</th>
+                  <td>
+                    Gave an invited talk at <strong>IBM Research</strong> <a href="https://drive.google.com/file/d/1c5MTSzcsFLBYpyPY4XxStkKarGHOMFdv/view" target="_blank" rel="noopener noreferrer">(slides)</a> on past internship projects, as part of the “Papers We Wrote” program which features presentations from their top-performing interns. <img class="emoji" title=":memo:" alt=":memo:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dd.png" height="20" width="20"> <img class="emoji" title=":star:" alt=":star:" src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png" height="20" width="20">
+ 
+                  </td>
+                </tr> 
+                <tr>
+                  <th scope="row">Jun 21, 2024</th>
+                  <td>
+                    Presented a <a href="https://drive.google.com/file/d/1NSakfvtCggxo2Iy69Z-vctTGvzVt5ICv/view?usp=sharing" target="_blank" rel="noopener noreferrer">poster</a> on our <a href="https://aclanthology.org/2024.americasnlp-1.25" target="_blank" rel="noopener noreferrer">submission</a> on adapting LLMs for very low-resource MT, ranked #3 at AmericasNLP shared task, at <strong>NAACL 2024</strong> in Mexico City. <img class="emoji" title=":sunrise:" alt=":sunrise:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f305.png" height="20" width="20"> <img class="emoji" title=":mexico:" alt=":mexico:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f2-1f1fd.png" height="20" width="20">
+
+<!-- **[AmericasNLP 2024]** Thrilled to have presented a poster on our system paper at NAACL in Mexico City! We ranked #3 in the AmericasNLP shared task by adapting LLMs for very low-resource MT in indigenous American languages. :sunrise: :mexico: -->
+ 
+                  </td>
+                </tr> 
+                <tr>
+                  <th scope="row">Jun 4, 2024</th>
+                  <td>
+                    <strong>[Interspeech 2024]</strong> My <a href="https://arxiv.org/abs/2406.06371" target="_blank" rel="noopener noreferrer">internship paper</a> with Naver Labs Europe, on a 90M parameter speech foundation model for 147 languages <a href="https://huggingface.co/utter-project/mHuBERT-147" target="_blank" rel="noopener noreferrer">(mHuBERT-147)</a>,  has been accepted to Interspeech with strong reviews! <img class="emoji" title=":sound:" alt=":sound:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f509.png" height="20" width="20"> <img class="emoji" title=":earth_africa:" alt=":earth_africa:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f30d.png" height="20" width="20">
+ 
+                  </td>
+                </tr> 
+                <tr>
+                  <th scope="row">Dec 6, 2023</th>
+                  <td>
+                    <strong>[EMNLP 2023]</strong> Presented a <a href="https://drive.google.com/file/d/1Qq8cXSlQ9qe0bpai4uoKtCrSWaSqjC9o/view?usp=sharing" target="_blank" rel="noopener noreferrer">poster</a> on disambiguation-centric pretraining at EMNLP, followed by oral presentations at <a href="https://drive.google.com/file/d/1GOzznOpTnq4uD9Kj8tmLDt8F0rGp0Cwu/view?usp=sharing" target="_blank" rel="noopener noreferrer">WMT’23</a> and <a href="https://drive.google.com/file/d/1VwcxwrgOYZilJMtwg6QJdDbaz5uYMztl/view?usp=drive_link" target="_blank" rel="noopener noreferrer">CALCS’23</a> <img class="emoji" title=":sunglasses:" alt=":sunglasses:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png" height="20" width="20"> <img class="emoji" title=":singapore:" alt=":singapore:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ec.png" height="20" width="20">
+ 
+                  </td>
+                </tr> 
+                <tr>
+                  <th scope="row">Oct 7, 2023</th>
+                  <td>
+                    <strong>[EMNLP 2023]</strong> 2 first-author acceptances on ambiguous MT - 1 paper each at <a href="https://aclanthology.org/2023.findings-emnlp.859" target="_blank" rel="noopener noreferrer">Findings</a> and <a href="https://aclanthology.org/2023.wmt-1.44" target="_blank" rel="noopener noreferrer">WMT</a>! <img class="emoji" title=":tada:" alt=":tada:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png" height="20" width="20">
+ 
+                  </td>
+                </tr> 
+                <tr>
+                  <th scope="row">Jul 11, 2023</th>
+                  <td>
+                    Received <a href="https://drive.google.com/file/d/1EgjvgCcWPJMNQtMLLjOIVhYMsKErt7TS/view?usp=sharing" target="_blank" rel="noopener noreferrer">Outstanding Reviewer Award</a> at ACL 2023! <img class="emoji" title=":medal_sports:" alt=":medal_sports:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c5.png" height="20" width="20">
+ 
+                  </td>
+                </tr> 
+                <tr>
+                  <th scope="row">Jun 26, 2023</th>
+                  <td>
+                    Started an internship on fine-tuning Massively Multilingual Speech Models at <a href="https://europe.naverlabs.com/" target="_blank" rel="noopener noreferrer">Naver Labs Europe</a> <img class="emoji" title=":rocket:" alt=":rocket:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png" height="20" width="20"> <img class="emoji" title=":fr:" alt=":fr:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1eb-1f1f7.png" height="20" width="20">
+ 
+                  </td>
+                </tr> 
+              </table>
+            </div> 
+          </div>
+
+          <!-- Selected papers -->
+          <div class="publications">
+            <h2>noteworthy publications</h2>
+            <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr">
+<abbr class="badge">EMNLP (Findings)</abbr><div class="teaser">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/pub_img/WSP-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/pub_img/WSP-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/pub_img/WSP-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/pub_img/WSP.png" data-zoomable>
+
+  </picture>
+
+</figure>
+</div>
+
+        </div>
+
+        <!-- Entry bib key -->
+        <div id="iyer-etal-2023-code" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Code-Switching with Word Senses for Pretraining in Neural Machine Translation</div>
+          <!-- Author -->
+          <div class="author">
+                  <em>Vivek Iyer</em>, Edoardo Barba, Alexandra Birch, Jeff Pan, and Roberto Navigli
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In Findings of the Association for Computational Linguistics: EMNLP 2023.</em> Dec 2023
+          </div>
+          <div>
+            <em><b>  </b></em>
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="tldr btn btn-sm z-depth-0" role="button">TLDR</a>
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://aclanthology.org/2023.findings-emnlp.859.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+            <a href="/assets/pdf/wsp_code.zip" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="/assets/pdf/WSP_Poster.pdf" class="btn btn-sm z-depth-0" role="button">Poster</a>
+            <a href="/assets/pdf/WSP_Presentation.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Lexical ambiguity is a significant and pervasive challenge in Neural Machine Translation (NMT), with many state-of-the-art (SOTA) NMT systems struggling to handle polysemous words (Campolungo et al., 2022). The same holds for the NMT pretraining paradigm of denoising synthetic “code-switched” text (Pan et al., 2021; Iyer et al., 2023), where word senses are ignored in the noising stage – leading to harmful sense biases in the pretraining data that are subsequently inherited by the resulting models. In this work, we introduce Word Sense Pretraining for Neural Machine Translation (WSP-NMT) - an end-to-end approach for pretraining multilingual NMT models leveraging word sense-specific information from Knowledge Bases. Our experiments show significant improvements in overall translation quality. Then, we show the robustness of our approach to scale to various challenging data and resource-scarce scenarios and, finally, report fine-grained accuracy improvements on the DiBiMT disambiguation benchmark. Our studies yield interesting and novel insights into the merits and challenges of integrating word sense information and structured knowledge in multilingual pretraining for NMT.</p>
+          </div>
+<!-- Hidden tldr block -->
+          <div class="tldr hidden">
+            <p>We propose a novel approach for pretraining multilingual NMT models leveraging word sense-specific information from Knowledge Bases. Our experiments show significant improvements in overall translation quality, and robustness to scale to various challenging data and resource-scarce scenarios.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr">
+<abbr class="badge">WMT (EMNLP)</abbr><div class="teaser">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/pub_img/llm_ambigmt-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/pub_img/llm_ambigmt-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/pub_img/llm_ambigmt-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/pub_img/llm_ambigmt.png" data-zoomable>
+
+  </picture>
+
+</figure>
+</div>
+
+        </div>
+
+        <!-- Entry bib key -->
+        <div id="iyer-etal-2023-towards" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Towards Effective Disambiguation for Machine Translation with Large Language Models</div>
+          <!-- Author -->
+          <div class="author">
+                  <em>Vivek Iyer</em>, Pinzhen Chen, and Alexandra Birch
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In Proceedings of the Eighth Conference on Machine Translation.</em> Dec 2023
+          </div>
+          <div>
+            <em><b>  </b></em>
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="tldr btn btn-sm z-depth-0" role="button">TLDR</a>
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://aclanthology.org/2023.wmt-1.44.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+            <a href="/assets/pdf/WMT23_AmbiguousMT.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Resolving semantic ambiguity has long been recognised as a central challenge in the field of Machine Translation. Recent work on benchmarking translation performance on ambiguous sentences has exposed the limitations of conventional Neural Machine Translation (NMT) systems, which fail to handle many such cases. Large language models (LLMs) have emerged as a promising alternative, demonstrating comparable performance to traditional NMT models while introducing new paradigms for controlling the target outputs. In this paper, we study the capabilities of LLMs to translate “ambiguous sentences” - i.e. those containing highly polysemous words and/or rare word senses. We also propose two ways to improve their disambiguation capabilities, through a) in-context learning and b) fine-tuning on carefully curated ambiguous datasets. Experiments show that our methods can match or outperform state-of-the-art systems such as DeepL and NLLB in four out of five language directions. Our research provides valuable insights into effectively adapting LLMs to become better disambiguators during Machine Translation. We release our curated disambiguation corpora and resources at https://data.statmt.org/ambiguous-europarl.</p>
+          </div>
+<!-- Hidden tldr block -->
+          <div class="tldr hidden">
+            <p>We study the capability of LLMs to scale to translation of ambiguous sentences (rare or infrequent word senses) and show they are comparable to or better than strong conventional NMT systems. We also propose techniques to guide LLMs to disambiguate better during translation.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr">
+<abbr class="badge">EACL (Findings)</abbr><div class="teaser">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/pub_img/CCS-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/pub_img/CCS-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/pub_img/CCS-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/pub_img/CCS.jpeg" data-zoomable>
+
+  </picture>
+
+</figure>
+</div>
+
+        </div>
+
+        <!-- Entry bib key -->
+        <div id="iyer-etal-2023-exploring" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Exploring Enhanced Code-Switched Noising for Pretraining in Neural Machine Translation</div>
+          <!-- Author -->
+          <div class="author">
+                  <em>Vivek Iyer</em>, Arturo Oncevay, and Alexandra Birch
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In Findings of the Association for Computational Linguistics: EACL 2023.</em> May 2023
+          </div>
+          <div>
+            <em><b>  </b></em>
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="tldr btn btn-sm z-depth-0" role="button">TLDR</a>
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://aclanthology.org/2023.findings-eacl.72.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+            <a href="https://aclanthology.org/attachments/2023.findings-eacl.72.software.zip" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Supp</a>
+            <a href="/assets/pdf/EACL23_Poster.pdf" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Multilingual pretraining approaches in Neural Machine Translation (NMT) have shown that training models to denoise synthetic code-switched data can yield impressive performance gains — owing to better multilingual semantic representations and transfer learning. However, they generated the synthetic code-switched data using non-contextual, one-to-one word translations obtained from lexicons - which can lead to significant noise in a variety of cases, including the poor handling of polysemes and multi-word expressions, violation of linguistic agreement and inability to scale to agglutinative languages. To overcome these limitations, we propose an approach called Contextual Code-Switching (CCS), where contextual, many-to-many word translations are generated using a ‘base’ NMT model. We conduct experiments on 3 different language families - Romance, Uralic, and Indo-Aryan - and show significant improvements (by up to 5.5 spBLEU points) over the previous lexicon-based SOTA approaches. We also observe that small CCS models can perform comparably or better than massive models like mBART50 and mRASP2, depending on the size of data provided. We empirically analyse several key factors responsible for these - including context, many-to-many substitutions, code-switching language count etc. - and prove that they all contribute to enhanced pretraining of multilingual NMT models.</p>
+          </div>
+<!-- Hidden tldr block -->
+          <div class="tldr hidden">
+            <p>We propose a novel pretraining mechanism for NMT called Contextual Code-Switching (CCS) that generates high quality, synthetic code-switched data for pretraining multilingual NMT models. We show this techique can be used for pretraining small, high-performing NMT models that yield gains of up to 5.5 spBLEU points against strong baselines.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr">
+<abbr class="badge">WMT (EMNLP)</abbr><div class="teaser">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/pub_img/cs_examples-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/pub_img/cs_examples-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/pub_img/cs_examples-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/pub_img/cs_examples.png" data-zoomable>
+
+  </picture>
+
+</figure>
+</div>
+
+        </div>
+
+        <!-- Entry bib key -->
+        <div id="kirefu2022university" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">The University of Edinburgh’s Submission to the WMT22 Code-Mixing Shared Task (MixMT)</div>
+          <!-- Author -->
+          <div class="author">Faheem Kirefu, 
+                  <em>Vivek Iyer</em>, Pinzhen Chen, and Laurie Burchell
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>Proceedings of the Seventh Conference on Machine Translation.</em> May 2022
+          </div>
+          <div>
+            <em><b> Ranked 2nd best system overall in both directions. </b></em>
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="tldr btn btn-sm z-depth-0" role="button">TLDR</a>
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/pdf/2210.11309.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+            <a href="/assets/pdf/MixMTPoster.pdf" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The University of Edinburgh participated in the WMT22 shared task on code-mixed translation. This consists of two subtasks: i) generating code-mixed Hindi/English (Hinglish) text generation from parallel Hindi and English sentences and ii) machine translation from Hinglish to English. As both subtasks are considered low-resource, we focused our efforts on careful data generation and curation, especially the use of backtranslation from monolingual resources. For subtask 1 we explored the effects of constrained decoding on English and transliterated subwords in order to produce Hinglish. For subtask 2, we investigated different pretraining techniques, namely comparing simple initialisation from existing machine translation models and aligned augmentation. For both subtasks, we found that our baseline systems worked best. Our systems for both subtasks were one of the overall top-performing submissions.</p>
+          </div>
+<!-- Hidden tldr block -->
+          <div class="tldr hidden">
+            <p>UEdin’s submission to Code-Mixed Hinglish&lt;-&gt;English Machine Translation task, wherein we propose several careful data augmentation and curation for the low-resourced Hinglish-English pair and explore advanced pretraining techniques. We ranked 2nd overall in both directions of this pair.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr">
+<abbr class="badge">EMNLP (Main)</abbr><div class="teaser">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/pub_img/VeeAlign_Example-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/pub_img/VeeAlign_Example-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/pub_img/VeeAlign_Example-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/pub_img/VeeAlign_Example.jpeg" data-zoomable>
+
+  </picture>
+
+</figure>
+</div>
+
+        </div>
+
+        <!-- Entry bib key -->
+        <div id="iyer-etal-2021-veealign" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">VeeAlign: Multifaceted Context Representation Using Dual Attention for Ontology Alignment</div>
+          <!-- Author -->
+          <div class="author">
+                  <em>Vivek Iyer</em>, Arvind Agarwal, and Harshit Kumar
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing.</em> Nov 2021
+          </div>
+          <div>
+            <em><b>  </b></em>
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="tldr btn btn-sm z-depth-0" role="button">TLDR</a>
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://aclanthology.org/2021.emnlp-main.842.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+            <a href="/assets/pdf/VeeAlign_code.zip" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Ontology Alignment is an important research problem applied to various fields such as data integration, data transfer, data preparation, etc. State-of-the-art (SOTA) Ontology Alignment systems typically use naive domain-dependent approaches with handcrafted rules or domain-specific architectures, making them unscalable and inefficient. In this work, we propose VeeAlign, a Deep Learning based model that uses a novel dual-attention mechanism to compute the contextualized representation of a concept which, in turn, is used to discover alignments. By doing this, not only is our approach able to exploit both syntactic and semantic information encoded in ontologies, it is also, by design, flexible and scalable to different domains with minimal effort. We evaluate our model on four different datasets from different domains and languages, and establish its superiority through these results as well as detailed ablation studies. The code and datasets used are available at \urlhttps://github.com/Remorax/VeeAlign.</p>
+          </div>
+<!-- Hidden tldr block -->
+          <div class="tldr hidden">
+            <p>An upgraded version of our Ontology Alignment system, VeeAlign, where we propose a multi-faceted context representation approach for concepts in an ontology, and discover semantically equivalent concepts with dual attention - achieving SOTA results against leading baselines in 4 domains and 2 languages.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr">
+<abbr class="badge">ISWC (Workshop)</abbr><div class="teaser">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/pub_img/VeeAlign_arch-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/pub_img/VeeAlign_arch-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/pub_img/VeeAlign_arch-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/pub_img/VeeAlign_arch.png" data-zoomable>
+
+  </picture>
+
+</figure>
+</div>
+
+        </div>
+
+        <!-- Entry bib key -->
+        <div id="iyer2020veealign" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">VeeAlign: a supervised deep learning approach to ontology alignment.</div>
+          <!-- Author -->
+          <div class="author">
+                  <em>Vivek Iyer</em>, Arvind Agarwal, and Harshit Kumar
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In Proceedings of the Ontology Matching Workshop @ International Semantic Web Conference 2020.</em> Dec 2020
+          </div>
+          <div>
+            <em><b> Ranked 1st in the Conference track. </b></em>
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="tldr btn btn-sm z-depth-0" role="button">TLDR</a>
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://moex.inria.fr/files/reports/ISWC2020-OM-ws.pdf#page=225" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+            <a href="/assets/pdf/VeeAlign_code.zip" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>While deep learning approaches have shown promising results in Natural Language Processing and Computer Vision domains, they have not yet been able to achieve impressive results in Ontology Alignment, and have typically performed worse than rule-based approaches. Some of the major reasons for this are: a) poor modelling of context, b) overfitting of standard DL models, and c) dataset sparsity, caused by class imbalance of positive alignment pairs wrt negative pairs. To mitigate these limitations, we propose a dual-attention based approach that uses a multi-faceted context representation to compute contextualized representations of concepts, which is then used to discover semantically equivalent concepts.</p>
+          </div>
+<!-- Hidden tldr block -->
+          <div class="tldr hidden">
+            <p>A supervised, deep learning-based approach to ontology alignment - that uses a dual attention mechanism to compute structural representation of ontological concepts. Ranked 1st at the OAEI 2020 Conference track.</p>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
+          </div>
+
+          <!-- Social -->
+          <div class="social">
+            <div class="contact-icons">
+            <a href="mailto:%76%69%76%65%6B.%69%79%65%72@%65%64.%61%63.%75%6B" title="email"><i class="fas fa-envelope"></i></a>
+            <a href="https://scholar.google.com/citations?user=LbDh_igAAAAJ" title="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://github.com/remorax" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vivekiyer98" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/remorax98" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            
+            </div>
+
+            <div class="contact-note">
+              Best way to reach me is through <a href="mailto:vivek.iyer@ed.ac.uk">email</a>!
+
+            </div>
+            
+          </div>
+        </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2024 Vivek  Iyer. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+Last updated: September 24, 2024.
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Mansory & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QP5VZF0MPX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-QP5VZF0MPX');
+  </script>
+  </body>
+</html>
+
