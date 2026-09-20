@@ -16,8 +16,7 @@
     booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023.",
     month = dec,
     year = "2023",
-    selected = {true},
-    abbr = {EMNLP (Findings)},
+    abbr = {EMNLP},
     tldr={We propose a novel approach for pretraining multilingual NMT models leveraging word sense-specific information from Knowledge Bases. Our experiments show significant improvements in overall translation quality, and robustness to scale to various challenging data and resource-scarce scenarios.},
     image={/assets/img/pub_img/WSP.png},
     address = "Singapore",
@@ -46,7 +45,6 @@
     year = "2023",
     address = "Singapore",
     abbr = "WMT (EMNLP)",
-    selected = {true},
     tldr = {We study the capability of LLMs to scale to translation of ambiguous sentences (rare or infrequent word senses) and show they are comparable to or better than strong conventional NMT systems. We also propose techniques to guide LLMs to disambiguate better during translation.},
     publisher = "Association for Computational Linguistics",
     image = {/assets/img/pub_img/llm_ambigmt.png},
@@ -68,10 +66,9 @@
     image = {/assets/img/pub_img/CCS.jpeg},
     poster = {EACL23_Poster.pdf},
     tldr = {We propose a novel pretraining mechanism for NMT called Contextual Code-Switching (CCS) that generates high quality, synthetic code-switched data for pretraining multilingual NMT models. We show this techique can be used for pretraining small, high-performing NMT models that yield gains of up to 5.5 spBLEU points against strong baselines.},
-    abbr = "EACL (Findings)",
+    abbr = "EACL",
     booktitle = "Findings of the Association for Computational Linguistics: EACL 2023.",
     month = may,
-    selected = {true},
     year = "2023",
     address = "Dubrovnik, Croatia",
     publisher = "Association for Computational Linguistics",
@@ -88,7 +85,6 @@
   author={Kirefu, Faheem and Iyer, Vivek and Chen, Pinzhen and Burchell, Laurie},
   journal = "Proceedings of the Seventh Conference on Machine Translation.",
   tldr = "UEdin's submission to Code-Mixed Hinglish<->English Machine Translation task, wherein we propose several careful data augmentation and curation for the low-resourced Hinglish-English pair and explore advanced pretraining techniques. We ranked 2nd overall in both directions of this pair.",
-  selected = {true},
   url = "https://arxiv.org/abs/2210.11309",
   pdf = "https://arxiv.org/pdf/2210.11309.pdf",
   image = {/assets/img/pub_img/cs_examples.png},
@@ -110,9 +106,8 @@
       Yih, Scott Wen-tau",
     booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing.",
     tldr = "An upgraded version of our Ontology Alignment system, VeeAlign, where we propose a multi-faceted context representation approach for concepts in an ontology, and discover semantically equivalent concepts with dual attention - achieving SOTA results against leading baselines in 4 domains and 2 languages.",
-    abbr = {EMNLP (Main)},
+    abbr = {EMNLP},
     month = nov,
-    selected = {true},
     year = "2021",
     address = "Online and Punta Cana, Dominican Republic",
     image = {/assets/img/pub_img/VeeAlign_Example.jpeg},
@@ -130,10 +125,9 @@
   author={Iyer, Vivek and Agarwal, Arvind and Kumar, Harshit},
   booktitle={Proceedings of the Ontology Matching Workshop @ International Semantic Web Conference 2020.},
   tldr="A supervised, deep learning-based approach to ontology alignment - that uses a dual attention mechanism to compute structural representation of ontological concepts. Ranked 1st at the OAEI 2020 Conference track.",
-  abbr="ISWC (Workshop)",
+  abbr="ISWC",
   month= dec,
   pages={216--224},
-  selected={true},
   image = {/assets/img/pub_img/VeeAlign_arch.png},
   pdf="https://moex.inria.fr/files/reports/ISWC2020-OM-ws.pdf#page=225",
   supp = {VeeAlign_code.zip},
@@ -244,8 +238,107 @@ isbn="978-3-030-97532-6"
   pdf={https://arxiv.org/pdf/2406.06371.pdf},
   image = {/assets/img/pub_img/mhubert147.png},
   abbr="Interspeech",
+  selected={true},
   month= sep,
   tldr="mHuBERT-147 is a compact 95M parameter multilingual HuBERT model trained on 90K hours of clean, open-license data. It outperforms larger models trained on substantially more data, ranking second and first on the ML-SUPERB 10min and 1h leaderboards, with SOTA scores for 3 tasks. Across ASR/LID tasks, our model consistently surpasses XLS-R (300M params; 436K hours) and demonstrates strong competitiveness against the much larger MMS (1B params; 491K hours).",
   abstract="We present mHuBERT-147, the first general-purpose massively multilingual HuBERT speech representation model trained on 90K hours of clean, open-license data. To scale up the multi-iteration HuBERT approach, we use faiss-based clustering, achieving 5.2x faster label assignment than the original method. We also apply a new multilingual batching up-sampling strategy, leveraging both language and dataset diversity. After 3 training iterations, our compact 95M parameter mHuBERT-147 outperforms larger models trained on substantially more data. We rank second and first on the ML-SUPERB 10min and 1h leaderboards, with SOTA scores for 3 tasks. Across ASR/LID tasks, our model consistently surpasses XLS-R (300M params; 436K hours) and demonstrates strong competitiveness against the much larger MMS (1B params; 491K hours). Our findings indicate that mHuBERT-147 is a promising model for multilingual speech tasks, offering an unprecedented balance between high performance and parameter efficiency.",
   year={2024}
+}
+
+@inproceedings{iyer-etal-2024-quality,
+    title = "Quality or Quantity? On Data Scale and Diversity in Adapting Large Language Models for Low-Resource Translation",
+    author = "Iyer, Vivek  and
+      Malik, Bhavitvya  and
+      Stepachev, Pavel  and
+      Chen, Pinzhen  and
+      Haddow, Barry  and
+      Birch, Alexandra",
+    editor = "Haddow, Barry  and
+      Kocmi, Tom  and
+      Koehn, Philipp  and
+      Monz, Christof",
+    booktitle = "Proceedings of the Ninth Conference on Machine Translation",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.wmt-1.128/",
+    pdf = "https://aclanthology.org/2024.wmt-1.128.pdf",
+    image = {/assets/img/pub_img/low-resource_emnlp.png},
+    abbr="WMT (Spotlight)",
+    selected = {true},
+    tldr = {We re-examine how parallel data and fine-tuning diversity affect LLM adaptation for low-resource machine translation, finding — contrary to recent trends — that parallel data remains critical while diversity tends to cause interference rather than transfer. Experiments across three LLMs and two low-resource language groups (Indigenous American and North-East Indian) confirm these trends generalize.},
+    doi = "10.18653/v1/2024.wmt-1.128",
+    pages = "1393--1409",
+    abstract = "Despite the recent popularity of Large Language Models (LLMs) in Machine Translation (MT), their performance in low-resource languages (LRLs) still lags significantly behind Neural Machine Translation (NMT) models. In this work, we explore what it would take to adapt LLMs for the low-resource setting. Particularly, we re-examine the role of two factors: a) the importance and application of parallel data, and b) diversity in Supervised Fine-Tuning (SFT). Recently, parallel data has seen reduced use in adapting LLMs for MT, while data diversity has been embraced to promote transfer across languages and tasks. However, for low-resource LLM-MT, we show that the opposite is true for both considerations: a) \textit{parallel data} is critical during both pre-training and SFT; b) diversity tends to cause \textit{interference} instead of transfer. Our experiments with three LLMs across two low-resourced language groups{---}Indigenous American and North-East Indian{---}reveal consistent trends, underscoring the generalizability of our findings. We believe these insights will be valuable for scaling to massively multilingual LLM-MT models that can effectively serve LRLs."
+}
+
+
+@inproceedings{khanuja-etal-2025-towards,
+    title = "Towards Automatic Evaluation for Image Transcreation",
+    author = "Khanuja, Simran  and
+      Iyer, Vivek  and
+      He, Xiaoyu  and
+      Neubig, Graham",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-long.359/",
+    pdf = "https://aclanthology.org/2025.naacl-long.359.pdf",
+    doi = "10.18653/v1/2025.naacl-long.359",
+    pages = "7034--7047",
+    image = {/assets/img/pub_img/transcreation.png},
+    abbr="NAACL",
+    tldr = {We propose the first suite of automatic evaluation metrics for image transcreation — spanning object-based, embedding-based and VLM-based approaches — targeting cultural relevance, semantic equivalence and visual similarity. Meta-evaluation across 7 countries shows strong agreement with human ratings, offering a practical alternative to costly human evaluation.},
+    ISBN = "979-8-89176-189-6",
+    abstract = "Beyond conventional paradigms of translating speech and text, recently, there has been interest in automated transcreation of images to facilitate localization of visual content across different cultures. Attempts to define this as a formal Machine Learning (ML) problem have been impeded by the lack of automatic evaluation mechanisms, with previous work relying solely on human evaluation. In this paper, we seek to close this gap by proposing a suite of automatic evaluation metrics inspired by machine translation (MT) metrics, categorized into: a) Object-based, b) Embedding-based, and c) VLM-based. Drawing on theories from translation studies and real-world transcreation practices, we identify three critical dimensions of image transcreation: cultural relevance, semantic equivalence and visual similarity, and design our metrics to evaluate systems along these axes. Our results show that proprietary VLMs best identify cultural relevance and semantic equivalence, while vision-encoder representations are adept at measuring visual similarity. Meta-evaluation across 7 countries shows our metrics agree strongly with human ratings, with average segment-level correlations ranging from 0.55-0.87. Finally, through a discussion of the merits and demerits of each metric, we offer a robust framework for automated image transcreation evaluation, grounded in both theoretical foundations and practical application. Our code can be found here: \url{https://github.com/simran-khanuja/automatic-eval-transcreation}"
+}
+
+
+@inproceedings{iyer-etal-2025-xl,
+    title = "{XL}-Suite: Cross-Lingual Synthetic Training and Evaluation Data for Open-Ended Generation",
+    author = "Iyer, Vivek  and
+      Chen, Pinzhen  and
+      Rei, Ricardo  and
+      Birch, Alexandra",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.550/",
+    pdf = "https://aclanthology.org/2025.findings-emnlp.550.pdf",
+    doi = "10.18653/v1/2025.findings-emnlp.550",
+    image = {/assets/img/pub_img/xlinstruct.png},
+    abbr = "EMNLP",
+    selected = {true},
+    tldr = {We introduce XL-Instruct, a technique for generating high-quality synthetic data for cross-lingual open-ended generation, and XL-AlpacaEval, a new benchmark for evaluating it. Fine-tuning on just 8K XL-Instruct examples boosts win-rate against GPT-4o-mini from 7.4% to 21.5% and improves same-language QA, with all data and code released as XL-Suite.},
+    pages = "10418--10432",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Cross-lingual open-ended generation {--} responding in a language different from that of the query {--} is an important yet understudied problem. This work proposes XL-Instruct, a novel technique for generating high-quality synthetic data, and introduces XL-AlpacaEval, a new benchmark for evaluating cross-lingual generation capabilities of large language models (LLMs). Our experiments show that fine-tuning with just 8K instructions generated using XL-Instruct significantly improves model performance, increasing the win rate against GPT-4o-mini from 7.4{\%} to 21.5{\%} and improving on several fine-grained quality metrics. Moreover, base LLMs fine-tuned on XL-Instruct exhibit strong zero-shot improvements to same-language question answering, as shown on our machine-translated m-AlpacaEval. These consistent gains highlight the promising role of XL-Instruct in the post-training of multilingual LLMs. Finally, we publicly release XL-Suite, a collection of training and evaluation data to facilitate research in cross-lingual open-ended generation."
+}
+
+@misc{omnilingualsonarteam2026omnilingualsonarcrosslingualcrossmodal,
+      title={Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Embeddings Bridging Massively Multilingual Text and Speech}, 
+      author={Omnilingual SONAR Team and João Maria Janeiro and Pere-Lluís Huguet Cabot and Ioannis Tsiamas and Yen Meng and Vivek Iyer and Guillem Ramírez and Loic Barrault and Belen Alastruey and Xiang "Tony" Cao and Yu-An Chung and Marta R. Costa-Jussa and David Dale and Kevin Heffernan and Jaehyeong Jo and Artyom Kozhevnikov and Alexandre Mourachko and Christophe Ropers and Holger Schwenk and Paul-Ambroise Duquenne},
+      year={2026},
+      eprint={2603.16606},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2603.16606},
+      pdf={https://arxiv.org/pdf/2603.16606},
+      arxiv={2603.16606},
+      abbr={arXiv},
+      selected={true},
+      image = {/assets/img/pub_img/spectrum.png},
+      tldr = {Omnilingual SONAR is a massively multilingual speech-text sentence embedding model spanning 1500+ languages. I led post-training efforts for Spectrum, an omnilingual, cross-modal encoder-decoder language model that reasons over OmniSONAR's language and modality-agnostic space to provide seamless zero-shot cross-lingual and cross-modal performance --- while also significantly enhancing long-context efficiency.},
 }

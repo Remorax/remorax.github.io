@@ -13,7 +13,7 @@ hr {
 }
 
 a, table.table a {
-  color: var(--global-theme-color);
+  color: var(--global-link-color);
   &:hover {
     color: var(--global-theme-color);
     text-decoration: underline;
@@ -92,7 +92,7 @@ blockquote {
   margin-bottom: 2rem;
   font-size: 0.875rem;
   a {
-    color: inherit;
+    color: var(--global-link-color);
     &:hover {
       color: var(--global-theme-color);
       text-decoration: none;
@@ -216,8 +216,17 @@ blockquote {
   color: var(--global-text-color);
 }
 
+.inline-icon {
+  height: 1em;
+  width: auto;
+  vertical-align: -0.15em;
+  margin: 0 1px;
+}
+
 .news table th {
   color: var(--global-text-color);
+  min-width: 4.5rem;
+  white-space: nowrap;
 }
 
 // Social (bottom)
@@ -645,6 +654,18 @@ html.transition *:after {
   display: block;
   margin: 10px auto;
   height: 50px;
+}
+
+.content i.logo {
+  display: block;
+  margin: 10px auto;
+  font-size: 50px;
+  text-align: center;
+  color: var(--global-text-color);
+}
+
+.content i.logo.meta-blue {
+  color: #0081FB;
 }
 
 .left {
